@@ -1,5 +1,9 @@
 const express = require('express');
+const cors = require('cors'); // Import the cors package
 const app = express();
+
+// Enable CORS for all origins
+app.use(cors());
 
 // Middleware to parse JSON request bodies
 app.use(express.json());
